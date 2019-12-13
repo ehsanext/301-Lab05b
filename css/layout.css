@@ -1,0 +1,64 @@
+
+header, footer {
+  background-color: lightgrey;
+  border: 0.25px solid black;
+  box-sizing: border-box;
+}
+
+header {
+  line-height: 75px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  line-height: 80px;
+}
+
+@media (min-width: 500px) {
+  header {
+    line-height: 100px;
+    background: red;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  main {
+    min-width: 100%;
+  }  
+
+  footer {
+    line-height: 150px;
+    background: orange;
+  }
+  
+}
+
+@media (min-width: 800px) {
+  header {
+    line-height: 100px;
+    background: orange;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+  }
+
+  main {
+    min-width: 100%;
+  }  
+
+  footer {
+    line-height: 150px;
+    background: red;
+  }
+  
+}

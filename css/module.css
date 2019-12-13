@@ -1,0 +1,100 @@
+aside, article {
+  background-color: lightgrey;
+  border: 0.25px solid black;
+  box-sizing: border-box;
+}
+
+.full-width {
+  
+}
+
+.half-width {
+  width: 50%;
+}
+
+aside {
+  line-height: 150px;
+}
+
+.sub-header {
+  line-height: 125px;
+}
+
+.sub-footer {
+  display: flex;
+  flex-direction: row;
+  line-height: 250px;
+}
+
+@media (min-width: 500px) {
+  aside {
+    min-width: 20.83%;
+    line-height: 600px;
+    background: yellow;
+    
+  }
+
+  main > article:first-child {
+    background: green;
+  }
+
+  main > article:nth-child(2) {
+    background: indigo;
+  }
+
+  section.left article.half-width:first-child {
+    background: blue;
+  }
+
+  section.left article.half-width:nth-child(2) {
+    background: violet;
+  }
+
+  section.right article.half-width:first-child {
+    background: chartreuse;
+  }
+
+  section.right article.half-width:nth-child(2) {
+    background: tan;
+  }
+
+  .sub-header {
+    width: 79.17%;
+    line-height: 200px;
+  }
+  
+  .sub-footer {
+    width: 79.17%;
+    line-height: 250px; 
+  }
+
+@media (min-width: 800px) {
+  aside {
+    background: pink;
+    
+  }
+
+  main > article:first-child {
+    background: blue;
+  }
+
+  main > article:nth-child(2) {
+    background: teal;
+  }
+
+  section.left article.half-width:first-child {
+    background: white;
+  }
+
+  section.left article.half-width:nth-child(2) {
+    background: chartreuse;
+  }
+
+  section.right article.half-width:first-child {
+    background: lightblue;
+  }
+
+  section.right article.half-width:nth-child(2) {
+    background: tan;
+  }
+}
